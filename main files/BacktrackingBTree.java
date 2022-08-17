@@ -3,7 +3,7 @@ import java.util.List;
 
 @SuppressWarnings("unchecked")
 public class BacktrackingBTree<T extends Comparable<T>> extends BTree<T> {
-	// For clarity only, this is the default ctor created implicitly.
+	// For clarity only, this is the default vector created implicitly.
 	public BacktrackingBTree() {
 		super();
 	}
@@ -12,7 +12,6 @@ public class BacktrackingBTree<T extends Comparable<T>> extends BTree<T> {
 		super(order);
 	}
 
-	//You are to implement the function Backtrack.
 	public void Backtrack() {
 		if (root == null)
 			return;
@@ -97,20 +96,6 @@ public class BacktrackingBTree<T extends Comparable<T>> extends BTree<T> {
 			output.addChild(toMerge1.getChild(i));
 		for (int i = 0; i < toMerge2.numOfChildren; i++)
 			output.addChild(toMerge2.getChild(i));
-		
-		return output;
-	}
-	
-	//Change the list returned to a list of integers answering the requirements
-	public static List<Integer> BTreeBacktrackingCounterExample(){
-		List<Integer> output = new LinkedList<Integer>();
-		
-		output.add(1);
-		output.add(2);
-		output.add(3);
-		output.add(4);
-		output.add(6);
-		output.add(8);
 		
 		return output;
 	}
