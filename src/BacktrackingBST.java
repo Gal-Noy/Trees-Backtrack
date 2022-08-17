@@ -217,7 +217,7 @@ public class BacktrackingBST implements Backtrack, ADTSet<BacktrackingBST.Node> 
     }
 
     @Override
-    public void backtrack() {
+    public void backtrack() { // Backtracking both insertion and deletion actions
         if (stack.isEmpty()) {
             return;
         }
