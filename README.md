@@ -1,6 +1,6 @@
 # Trees and array Backtrack
 
-As part of Data-Structures course, given partial implementation of a data structure, we needed to build a backtracking algorithm to "undo" the last insertion action performed on the structure and implement its function. The data structures in which we did this are simple ADTs (binary trees & sorted arrays) and self-balancing trees (AVL Trees & B-Trees).
+As part of Data-Structures course, given partial implementations different data structures, we needed to build a backtracking algorithm to "undo" the last insertion action performed on the structures and implement its function. The data structures in which we did this are simple ADTs (binary trees & sorted arrays) and self-balancing trees (AVL Trees & B-Trees).
 
 We have been assigned a limitation of O(log n) for all binary trees and O(h) for B-tree, for performing a single backtrack.
 
