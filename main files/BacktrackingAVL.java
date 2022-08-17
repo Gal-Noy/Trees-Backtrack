@@ -4,24 +4,11 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class BacktrackingAVL extends AVLTree {
-    // For clarity only, this is the default ctor created implicitly.
+    // For clarity only, this is the default vector created implicitly.
     public BacktrackingAVL() {
         super();
     }
 
-    //Change the list returned to a list of integers answering the requirements
-    public static List<Integer> AVLTreeBacktrackingCounterExample() {
-        List<Integer> output = new LinkedList<Integer>();
-        output.add(1);
-        output.add(2);
-        output.add(3);
-        output.add(4);
-        output.add(6);
-        output.add(8);
-        return output;
-    }
-
-    //You are to implement the function Backtrack.
     public void Backtrack() {
         if(root == null)
             return;
