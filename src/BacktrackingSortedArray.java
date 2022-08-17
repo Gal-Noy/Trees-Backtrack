@@ -130,13 +130,4 @@ public class BacktrackingSortedArray implements Array<Integer>, Backtrack {
             ans += arr[i] + " ";
         System.out.println(ans);
     }
-
-    public static void main(String[] args) {
-        BacktrackingSortedArray arr = new BacktrackingSortedArray(new Stack(), 10);
-        arr.insert(3);
-        arr.insert(8);
-        arr.insert(1);
-        System.out.println(arr.search(3));
-        arr.print();
-    }
 }
